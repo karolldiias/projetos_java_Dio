@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class Aula1 {
+public class Codigo1 {
 
   private final static String WELCOME_MESSAGE = "Olá informe o seu nome:";
   
+  // esse programa solicita ao usuário digitar seu nome e sua idade e imprimir uma mensagem de olá.
   public static void main (String[] args){
     var scanner = new Scanner(System.in);
     System.out.println(WELCOME_MESSAGE);
