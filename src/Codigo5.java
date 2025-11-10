@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Codigo5 {
-  
+  //aula if else e else if - verifica valores booleanos
 
   public static void main(String[] args) {
     var scanner = new Scanner(System.in);
