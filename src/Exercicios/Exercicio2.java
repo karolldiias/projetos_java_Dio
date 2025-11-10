@@ -9,6 +9,10 @@ public class Exercicio2 {
     var scanner = new Scanner(System.in);
     System.out.println("Informe um número para realizar sua tabuada");
     var number = scanner.nextInt();
+
+    for(var i = 0; i<=10; i++){
+      System.out.printf("%s x %s = %s\n", number, i, (number*i));
+    }
     
   }
 }
