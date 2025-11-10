@@ -7,6 +7,9 @@
     },
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
+    ],
+    "cSpell.words": [
+        "Codigo"
     ]
     
 }

@@ -1,0 +1,15 @@
+# Programação em JAVA
+
+Nesse repositório estão os códigos propostos e apresentados durante as aulas do curso Java da DIO.
+
+## 💻 Código 1
+Solicita ao usuário informar seu nome e sua idade para apresentar uma mensagem de boas-vindas
+
+## 💻 Código 2
+Trabalha com operadores e lógica e para isso utiliza uma regra de negócio onde o sistema indica se o usuário só poderá dirigir se for maior de 18 anos ou se for emancipado e maior de 16 anos.
+
+## 💻 Código 3
+Trabalha com operadores aritméticos e como realizar raiz e potência
+
+## 💻 Código 4
+Trabalha com operadores bitwise

@@ -4,6 +4,8 @@ public class Codigo3 {
   
 public static void main (String[] args){
 
+  //operadores aritméticos
+
   var scanner = new Scanner(System.in);
   System.out.println("Informe o primeiro número:");
   var value1 = scanner.nextInt();
