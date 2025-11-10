@@ -9,5 +9,6 @@ public class Exercicio2 {
     var scanner = new Scanner(System.in);
     System.out.println("Informe um número para realizar sua tabuada");
     var number = scanner.nextInt();
+    
   }
 }
