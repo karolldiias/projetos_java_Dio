@@ -12,32 +12,36 @@ public class Exercicio3 {
     * incluindo os números informados e em ordem decrescente;
     */
 
-    //continuar
+   // continuar
    public static void main(String[] args) {
       var scanner = new Scanner(System.in);
 
       System.out.println("Escolha o primeiro número:");
       var numero1 = scanner.nextInt();
-      
-      while(true){
+
+      while (true) {
          System.out.println("Escolha o segundo número:");
          var numero2 = scanner.nextInt();
 
-         if(numero2 > numero1){
+         if (numero2 > numero1) {
             System.out.printf("Informe um número menor que %s \n", numero1);
             continue;
-         } 
-         
-         else {
-
-            System.out.println("Escolha entre impar ou par");
-            var imparOuPar = scanner.next();
-            
-            System.out.printf("%s", imparOuPar);
          }
-
-
+         break;
       }
+
+      while (true) {
+         System.out.println("Deseja imprimir números impares ou pares?");
+         var numero3 = scanner.next();
+
+         if (numero3.equals("par") || numero3 == "impar") {
+            System.out.printf("Escolha entre impar ou par e digite");
+            continue;
+         } 
+         break;
+            
+      }
+      System.out.println("Fim da execução");
 
    }
 }
