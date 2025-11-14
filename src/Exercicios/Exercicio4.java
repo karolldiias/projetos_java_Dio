@@ -29,25 +29,25 @@ public class Exercicio4 {
       System.out.println("Digite seu peso");
       peso = scanner.nextDouble();
 
-      //Calcular formula IMC
+      //Cálculo do IMC
       double imc = (peso / (altura*altura));
 
       //Exibindo resultado
       if(imc <= 18.5){
          System.out.println("Abaixo do peso");
-      } else if (imc >= 18.6 && imc <= 24.5){
+      } else if (imc <= 24.5){
          System.out.println("Peso ideal");
-      }else if (imc >= 25 && imc <= 29.9){
+      }else if (imc <= 29.9){
          System.out.println("Levemente acima do peso");
-      }else if (imc >= 30 && imc <= 34.9){
+      }else if (imc <= 34.9){
          System.out.println("Obesidade Grau I");
-      }else if (imc >= 35 && imc <= 39.9){
+      }else if (imc <= 39.9){
          System.out.println("Obesidade Grau II (Severa)");
       }else{
          System.out.println("Obesidade III (Mórbida)");
       }
 
-      System.out.printf("Seu peso é %s, sua altura é %s e o seu IMC foi de %s", peso, altura, imc);
+      System.out.printf("Seu peso é %s kg, sua altura é %.2f e o seu IMC foi de %.2f", peso, altura, imc);
    }
 
 }
