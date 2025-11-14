@@ -1,5 +1,7 @@
 package Exercicios;
 
+import java.util.Scanner;
+
 public class Exercicio4 {
 
    /*
@@ -15,11 +17,37 @@ public class Exercicio4 {
     * Se for maior ou igual a 40,0 "Obesidade III (Mórbida)";
     */
    public static void main(String[] args) {
-      var number = 0;
-      while(number<=10){
-         System.out.println(number);
-         number++;
+      var scanner = new Scanner(System.in);
+      double altura;
+      double peso;
+      
+      //Entrada da altura
+      System.out.println("Digite sua altura");
+      altura = scanner.nextFloat();
+      
+      //Entrada do peso
+      System.out.println("Digite seu peso");
+      peso = scanner.nextDouble();
+
+      //Calcular formula IMC
+      double imc = (peso / (altura*altura));
+
+      //Exibindo resultado
+      if(imc <= 18.5){
+         System.out.println("Abaixo do peso");
+      } else if (imc >= 18.6 && imc <= 24.5){
+         System.out.println("Peso ideal");
+      }else if (imc >= 25 && imc <= 29.9){
+         System.out.println("Levemente acima do peso");
+      }else if (imc >= 30 && imc <= 34.9){
+         System.out.println("Obesidade Grau I");
+      }else if (imc >= 35 && imc <= 39.9){
+         System.out.println("Obesidade Grau II (Severa)");
+      }else{
+         System.out.println("Obesidade III (Mórbida)");
       }
+
+      System.out.printf("Seu peso é %s, sua altura é %s e o seu IMC foi de %s", peso, altura, imc);
    }
 
 }
