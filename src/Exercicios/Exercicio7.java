@@ -24,6 +24,8 @@ public class Exercicio7 {
 
     //Exibir mensagem
     System.out.printf("A área do retângulo é %.2f", area);
+    
+    scanner.close();
   }
   
 }

@@ -25,5 +25,7 @@ public class Exercicio8 {
     //Exibir mensagem
     System.out.printf("A diferença de idade entre %s e %s é de %s anos", nomePrimeiro, nomeSegundo, diferencaIdade);
 
+    scanner.close();
+
   }
 }
