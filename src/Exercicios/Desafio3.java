@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Desafio3 {
 
-  // TODO: Crie uma string log que concatene os valores recebidos em um formato organizado:
+  
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);

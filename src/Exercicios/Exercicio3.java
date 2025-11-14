@@ -16,32 +16,32 @@ public class Exercicio3 {
    public static void main(String[] args) {
       var scanner = new Scanner(System.in);
 
-      System.out.println("Escolha o primeiro número:");
-      var numero1 = scanner.nextInt();
+      //entrada do primero número
+      System.out.println("Digite primeiro número:");
+      int primeiroNumero = scanner.nextInt();
 
-      while (true) {
-         System.out.println("Escolha o segundo número:");
-         var numero2 = scanner.nextInt();
+      //entrada do segundo número
+      int segundoNumero;
+      do {
+         System.out.println("Digite o segundo número (maior que o primeiro)");
+         segundoNumero = scanner.nextInt();
+      } while (segundoNumero <= primeiroNumero);
 
-         if (numero2 > numero1) {
-            System.out.printf("Informe um número menor que %s \n", numero1);
-            continue;
+      //Escolha entre par ou impar
+      System.out.println("Deseja imprimir números pares ou ímpares? (Digite par ou impar)");
+      String escolha = scanner.next();
+
+      System.out.println("Números " +  escolha + "(es) entre " +  primeiroNumero + " e " +  segundoNumero);
+
+
+      // Exibição dos números conforme escolha
+      for (int i = segundoNumero; i >= primeiroNumero; i--){
+         if(escolha.equals("par") && i % 2==0){
+            System.out.println(i);
+         } else if (escolha.equals("impar") && i % 2 !=0){
+            System.out.println(i);
          }
-         break;
       }
-
-      while (true) {
-         System.out.println("Deseja imprimir números impares ou pares?");
-         var numero3 = scanner.next();
-
-         if (numero3.equals("par") || numero3 == "impar") {
-            System.out.printf("Escolha entre impar ou par e digite");
-            continue;
-         } 
-         break;
-            
-      }
-      System.out.println("Fim da execução");
-
+      scanner.close();
    }
 }

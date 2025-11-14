@@ -17,10 +17,6 @@ public class Desafio4 {
       System.out.println("Nome muito longo" + nomeCompleto.length());
     }
 
-
-    // TODO: Implemente a estrutura condicional para verifica o tamanho do texto
-    // digitado:
-
     sc.close();
   }
 }
