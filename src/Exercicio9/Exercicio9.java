@@ -24,28 +24,27 @@ public class Exercicio9 {
  
 
   private final static ContaBancaria contaBancaria = new ContaBancaria();
+  
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    Cliente clienteNovo= new Cliente();
-    //Entrada nome
-    clienteNovo.setNome("Karoline");
-    System.out.printf("Bem-vindo, %s\n", clienteNovo.getNome());
     
     var option = 1;
     do{
       System.out.println("===Escolha uma opção===");
-      System.out.println("0 - Sair");
       System.out.println("1 - Consultar saldo");
       System.out.println("2 - Consultar Cheque Especial");
-      System.out.println("3 - Depositar 500 reais");
-      System.out.println("4 - Sacar 500 reais");
+      System.out.println("3 - Depositar");
+      System.out.println("4 - Sacar");
+      System.out.println("5 - Consultar uso do Cheque Especial");
+      System.out.println("0 - Sair");
       option = scanner.nextInt();
       switch(option){
+        case 1 -> contaBancaria.consultarSaldo();
+        case 2 -> contaBancaria.consultarChequeEspecial();
+        case 3 -> contaBancaria.depositarDinheiro();
+        case 4 -> contaBancaria.sacarDinheiro();
+        case 5 -> contaBancaria.consultarUsoChequeEspecial();
         case 0 -> System.exit(0);
-        case 1 ->System.out.printf("Seu saldo é %s\n", contaBancaria.consultarSaldo());
-        case 2 ->System.out.printf("O valor disponível de Cheque Especial é %s\n", contaBancaria.consultarChequeEspecial());
-        case 3 ->System.out.printf("O valor depositado foi de %s seu novo saldo é %s\n", contaBancaria.getDepositarDinheiro(), contaBancaria.SaldoAposdepositar());
-        case 4 ->System.out.printf("O valor sacado foi de %s seu novo saldo é %s\n", contaBancaria.getSacarDinheiro(), contaBancaria.SaldoAposSacar());
       }
     } while(true);
 

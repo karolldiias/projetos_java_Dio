@@ -2,38 +2,36 @@ package Exercicio9;
 
 public class ContaBancaria {
 
-  private double saldo = 1000;
+  private double saldo;
 
-  private double chequeEspecial = 400;
-
-  private double depositarDinheiro = 500;
-
-  private double sacarDinheiro = 500;
-
-
-  public double getSacarDinheiro() {
-    return sacarDinheiro;
+  public void setSaldo(double saldo) {
+    this.saldo = saldo;
   }
 
-  public double getDepositarDinheiro() {
-    return depositarDinheiro;
-  }
-
-  public double consultarChequeEspecial(){
-    return chequeEspecial;
-  }
-
-  public double consultarSaldo() {
+  public double getSaldo() {
     return saldo;
   }
 
-  public double SaldoAposdepositar(){
-    return saldo += depositarDinheiro;
+  public void consultarSaldo(){
+    System.out.println("Você esta consultando seu saldo");
+  }
+  
+  public void consultarChequeEspecial(){
+    System.out.println("Você esta consultando seu cheque especial");
+  }
+  
+  public void depositarDinheiro(){
+    System.out.println("Você esta depositando");
+  }
+  
+  public void sacarDinheiro(){
+    System.out.println("Você esta sacando");
+  }
+  
+  public void consultarUsoChequeEspecial(){
+    System.out.println("Você esta consultando o uso do cheque especial");
 
   }
 
-  public double SaldoAposSacar(){
-    return saldo -=sacarDinheiro;
-  }
 }
 
